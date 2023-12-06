@@ -141,7 +141,7 @@ We found five occurrences of this refactoring.
 
 #### Extract conditional in render
 
-*React* allows conditional rendering of UI elements using JavaScript syntax like if statements, &&, and ? : operators, depending on the application's state—for example, a set of UI elements is rendered only when the user is logged in. This refactoring extracts conditional rendering.
+*React* allows conditional rendering of UI elements using JavaScript syntax like ```if``` statements, ```&&```, and ```? :``` operators, depending on the application's state—for example, a set of UI elements is rendered only when the user is logged in. This refactoring extracts conditional rendering.
 
 > **Problem:** Mixing JSX code with nested conditional rendering makes the code hard to read and maintain. 
 >
@@ -172,11 +172,29 @@ Refactoring | Similar to | Occurrences | Projects
 
 #### Extract component
 
-This refactoring occurs when parts of a component appear in multiple places. Therefore, extracting these parts into a new component allows their reuse in other places. We found 13 occurrences of this refactoring in our dataset.
+This refactoring occurs when parts of a component appear in multiple places. Therefore, extracting these parts into a new component allows their reuse in other places. 
+
+> **Problem:** Certain elements of a component are replicated across multiple components, resulting in duplicated code.
+
+> **Solution:** Move this code to a separate component and replace the old code with a call to the new component. 
+
+> **Benefits:** Consolidating duplicated code into a separate component promotes reusability, enhances code readability, and simplifies maintenance efforts.
+
+> **Liabilities:** This solution might introduce complexities in integrating the new component managing dependencies, potentially requiring additional refactoring efforts across the codebase, which could temporarily impact development workflows.
+
+We found 13 occurrences of this refactoring in our dataset.
 
 #### Rename component
 
-We found ten refactorings that rename components. This refactoring  usually occurs when the name of a component does not represent the component well, either because the component was poorly named or because its purpose evolved and the original name finished being a good choice.
+This refactoring  usually occurs when the name of a component does not represent the component well, either because the component was poorly named or because its purpose evolved and the original name finished being a good choice.
+
+> **Problem:** The name of a component does not represent the component well. 
+
+> **Solution:** Rename the component.
+
+> **Benefits**: Code readability. 
+
+We found ten refactorings that rename components. 
 
 #### Move component
 
