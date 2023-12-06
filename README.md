@@ -198,7 +198,42 @@ We found 30 refactorings that rename components.
 
 #### Move component
 
-This refactoring is recommended when a component is used in multiple files. In such cases, we should consider moving the component to the location where it is most used. We found 24 occurrences of the move component refactoring.
+This refactoring is recommended when a component is used in multiple files. In such cases, we should consider moving the component to the location where it is most used. 
+
+> **Problem:** A component is used more in another file than in its own file.
+
+> **Solution:** Move the component to where it is more used.
+
+> **Benefits:** Centralizing the component where it is predominantly used enhances organization, readability, and functionality within the codebase.
+
+We found 24 occurrences of this refactoring.
+
+#### Split Component
+
+This refactoring occurs when a component starts getting too large, with many responsibilities, making it hard to maintain. 
+
+> **Problem:** A component too large, with many responsibilities.
+
+> **Solution:** Create new components, dividing the large component into smaller and more manageable parts. 
+
+> **Benefits:** Improve maintainability, readability, and scalability through component segmentation.
+
+> **Liabilities:** This can increase the complexity of component communication.
+
+
+We found nine occurrences of this refactoring in our dataset.
+
+#### Move hook
+
+This refactoring is recommended when a hook is used in multiple components. In such cases, we should consider moving the hook to the location where it is most used. 
+
+> **Problem:** A hook is used more in another file (or component) than in its own file (or component).
+
+> **Solution:** Move the hook to where it is more used.
+
+> **Benefits:** Centralizing the hook where it is predominantly used enhances organization, readability, and functionality within the codebase.
+
+We found eight occurrences of this refactoring.
 
 #### Rename prop
 
