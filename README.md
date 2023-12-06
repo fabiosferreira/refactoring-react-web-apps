@@ -182,7 +182,7 @@ This refactoring occurs when parts of a component appear in multiple places. The
 
 > **Liabilities:** This solution might introduce complexities in integrating the new component managing dependencies, potentially requiring additional refactoring efforts across the codebase, which could temporarily impact development workflows.
 
-We found 13 occurrences of this refactoring in our dataset.
+We found 76 occurrences of this refactoring in our dataset.
 
 #### Rename component
 
@@ -194,11 +194,37 @@ This refactoring  usually occurs when the name of a component does not represent
 
 > **Benefits**: Code readability. 
 
-We found ten refactorings that rename components. 
+We found 30 refactorings that rename components. 
 
 #### Move component
 
-This refactoring is recommended when a component is used in multiple files. In such cases, we should consider moving the component to the location where it is most used. We found three occurrences of the move component refactoring.
+This refactoring is recommended when a component is used in multiple files. In such cases, we should consider moving the component to the location where it is most used. We found 24 occurrences of the move component refactoring.
+
+#### Rename prop
+
+This refactoring is similar to a traditional rename refactoring. It occurs when the name of a prop does not represent its purpose very well. We found seven occurrences of this refactoring.
+
+> **Problem:** The name of a prop does not represent its purpose very well. 
+
+> **Solution:** Rename the prop.
+
+> **Benefits**: Code readability. 
+
+We found 12 refactorings that rename components. 
+
+#### Rename hook
+
+This refactoring is also similar to a traditional rename refactoring. It occurs when the name of a hook does not represent its purpose well. 
+
+> **Problem:** The name of a hook does not represent its purpose very well.  
+
+> **Solution:** Rename the hook.
+
+> **Benefits**: Code readability. 
+
+We found six occurrences of this refactoring.
+
+
 
 ### JavaScript Refactorings
 
