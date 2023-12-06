@@ -271,6 +271,18 @@ In web apps, duplicated UI elements are also a common design problem. For exampl
 
 We found seven refactorings extracting HTML/JS code to reusable components.
 
+#### Extract JSX outside render method to component
+
+This refactoring enables the reuse of helper methods with JSX code in other components. In *React*, the render method---which is the only method required in a class--- returns a JSX template describing what should appear on the UI. The other methods in a class component are coupled with the render method.
+
+**Problem:** When the ```render``` method becomes large, developers sometimes move part of its code to separate methods, which prevents reuse decoupled from the render.
+
+**Solution:** Extract these methods to new components. 
+
+**Benefits:** Extracting these methods to new components improves reusability and allows their reuse in other pages. 
+
+We found six occurrences of this refactoring in our dataset.
+
 #### Rename hook
 
 This refactoring is also similar to a traditional rename refactoring. It occurs when the name of a hook does not represent its purpose well. 
