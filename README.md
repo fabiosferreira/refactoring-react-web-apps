@@ -208,6 +208,30 @@ This refactoring is recommended when a component is used in multiple files. In s
 
 We found 24 occurrences of this refactoring.
 
+#### Remove unused props
+
+Passing props to child components is common when developing and maintaining *React* applications. However, as the application evolves, some props may become unused due to changes in the component's logic or requirements. This refactoring remove unused props.
+
+> **Problem:** Unused props can clutter the codebase, making it harder to understand and maintain the component.
+
+> **Solution:** Eliminate unused props.
+
+> **Benefits:** Improved code clarity and maintenance.
+
+We found 24 occurrences of a refactoring that eliminates unused props.
+
+#### Rename prop
+
+This refactoring is similar to a traditional rename refactoring. It occurs when the name of a prop does not represent its purpose very well. We found seven occurrences of this refactoring.
+
+> **Problem:** The name of a prop does not represent its purpose very well. 
+
+> **Solution:** Rename the prop.
+
+> **Benefits**: Code readability. 
+
+We found 12 refactorings that rename components. 
+
 #### Split Component
 
 This refactoring occurs when a component starts getting too large, with many responsibilities, making it hard to maintain. 
@@ -235,17 +259,17 @@ This refactoring is recommended when a hook is used in multiple components. In s
 
 We found eight occurrences of this refactoring.
 
-#### Rename prop
+#### Extract HTML/JS code to component
 
-This refactoring is similar to a traditional rename refactoring. It occurs when the name of a prop does not represent its purpose very well. We found seven occurrences of this refactoring.
+In web apps, duplicated UI elements are also a common design problem. For example, some buttons in an app might be very similar, changing only details such as text and image. The problem happens when the HTML/JS code that implements these buttons is duplicated, making it more difficult to maintain, reuse, and evolve. Thus, refactoring duplicated UI code to components fosters reuse and encapsulation. 
 
-> **Problem:** The name of a prop does not represent its purpose very well. 
+> **Problem:** Duplicated HTML/JS code.
 
-> **Solution:** Rename the prop.
+> **Solution:** Extract the duplicated code to a new component.
 
-> **Benefits**: Code readability. 
+> **Benefits:** Consolidating duplicated code into a separate component promotes reusability, enhances code readability, and simplifies maintenance efforts.
 
-We found 12 refactorings that rename components. 
+We found seven refactorings extracting HTML/JS code to reusable components.
 
 #### Rename hook
 
