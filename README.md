@@ -304,7 +304,7 @@ As described in the following table, we found ten instances of five refactoring 
 Refactoring | Type | Occurrences | Projects |
 | :--- | :---: | :---: | :---:
 Convert JS code in TS | JS | 13 | 5
-Migrate function to arrow function syntax JS | 4 | 2
+Migrate function to arrow function syntax | JS | 4 | 2
 Replace promises with useCallBack  | JS | 1 | 1
 Replace EOL to semi-colon format | JS | 1| 1
 Rename CSS Class | CSS | 2 | 2
